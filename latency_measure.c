@@ -104,7 +104,7 @@ int main() {
 
 //-----------------------------------------L3--------------------------------------------
     //Hoping for processor switch/eviction of addr from L1 and L2
-    sleep(0.5);
+    sleep(1);
     //Accessing random memory address in range [64, 4095] to bring the page in TLB but not bring the addr[0:64] block in L1 cache
     temp = addr[1111];
     time = measure(addr);
